@@ -1,17 +1,48 @@
-# Quartz v5
+# 📚 我的学习笔记
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+使用 **Obsidian** 编写，通过 **Quartz 5** 构建发布的个人学习网站。
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
+> 🔗 在线访问：[https://rfaunion.github.io/my-learning-site](https://rfaunion.github.io/my-learning-site)
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+## 🚀 本地开发
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+```bash
+# 安装依赖
+npm install
 
-## Sponsors
+# 安装社区插件
+node ./quartz/bootstrap-cli.mjs plugin install
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+# 启动开发服务器
+node ./quartz/bootstrap-cli.mjs build --serve --port 8080
+```
+
+## 🔗 接入 Obsidian 库
+
+项目已配置好软链接方案，运行一键脚本即可：
+
+```bash
+chmod +x setup.sh
+./setup.sh
+```
+
+Obsidian 库路径：`/Users/dongyebin/Library/Mobile Documents/iCloud~md~obsidian/Documents/ai`
+
+## 📁 目录结构
+
+```
+content/          # → Obsidian 库（软链接）
+quartz.config.yaml  # 网站配置
+.github/workflows/  # 自动部署
+```
+
+## 🛠️ 技术栈
+
+- [Obsidian](https://obsidian.md/) — 笔记编辑器
+- [Quartz 5](https://quartz.jzhao.xyz/) — 静态网站生成器
+- [GitHub Pages](https://pages.github.com/) — 网站托管
+- [GitHub Actions](https://github.com/features/actions) — 自动部署
+
+---
+
+> 基于 [Quartz](https://github.com/jackyzha0/quartz) 构建
