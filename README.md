@@ -2,7 +2,7 @@
 
 使用 **Obsidian** 编写，通过 **Quartz 5** 构建发布的个人学习网站。
 
-> 🔗 在线访问：[https://rfaunion.github.io/my-learning-site](https://rfaunion.github.io/my-learning-site)
+> 🔗 在线访问：[https://rfaunion.github.io/obsidian](https://rfaunion.github.io/obsidian)
 
 ## 🚀 本地开发
 
