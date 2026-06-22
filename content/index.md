@@ -14,6 +14,7 @@ description: 个人知识库 · AI · 编程 · 技术思考
 | [AI 晨报](AI/AI晨报/) | 每日 AI 资讯汇总 |
 | [AI 编程 Agent 横评](AI/AI编程Agent横评2026/) | 海外 7 款工具评测 |
 | [国产 AI Agent 横评](AI/国产AI编程Agent横评2026/) | 国内 6 款工具评测 |
+| [AI Work Agent 横评](AI/WorkAgent横评2026/) | 通用办公 Agent 评测 |
 | [HTML 日报](ai-report/reports.html) | 精美排版日报 |
 | [网站部署记录](专题/网站部署记录/) | 搭建过程文档 |
 
