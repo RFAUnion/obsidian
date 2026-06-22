@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 晨报 · 2026.06.22</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--o50:#fff7ed;--o100:#ffedd5;--o200:#fed7aa;--o300:#fdba74;--o400:#fb923c;--o500:#f97316;--o600:#ea580c;--o700:#c2410c;--g50:#f9fafb;--g100:#f3f4f6;--g200:#e5e7eb;--g300:#d1d5db;--g500:#6b7280;--g600:#4b5563;--g700:#374151;--g800:#1f2937;--g900:#111827}
+body{font-family:'Noto Sans SC',-apple-system,BlinkMacSystemFont,sans-serif;background:linear-gradient(135deg,#fff7ed 0%,#ffedd5 50%,#fef3c7 100%);min-height:100vh;color:var(--g800);line-height:1.6}
+.hero{background:linear-gradient(135deg,#ea580c 0%,#f97316 40%,#fb923c 70%,#fdba74 100%);color:#fff;padding:56px 24px 40px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 30% 50%,rgba(255,255,255,.08) 0%,transparent 50%),radial-gradient(circle at 70% 80%,rgba(255,255,255,.05) 0%,transparent 40%);pointer-events:none}
+.hero-content{position:relative;z-index:1;max-width:960px;margin:0 auto}
+.hero-badge{display:inline-block;background:rgba(255,255,255,.2);backdrop-filter:blur(8px);padding:4px 16px;border-radius:20px;font-size:13px;margin-bottom:16px;letter-spacing:1px;border:1px solid rgba(255,255,255,.25)}
+.hero h1{font-size:42px;font-weight:900;letter-spacing:-1px;margin-bottom:4px;text-shadow:0 2px 8px rgba(0,0,0,.15)}
+.hero .subtitle{font-size:16px;opacity:.85;margin-bottom:24px}
+.hero-stats{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.stat-card{background:rgba(255,255,255,.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:10px 20px;text-align:center;min-width:90px}
+.stat-num{font-size:24px;font-weight:800;display:block}
+.stat-label{font-size:12px;opacity:.8;margin-top:2px}
+.nav-bar{background:var(--g900);padding:12px 24px;position:sticky;top:0;z-index:100;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
+.nav-bar::-webkit-scrollbar{display:none}
+.nav-item{flex-shrink:0;color:var(--g300);text-decoration:none;font-size:13px;padding:6px 14px;border-radius:8px;transition:.2s;white-space:nowrap;font-weight:500}
+.nav-item:hover,.nav-item.active{background:rgba(251,146,60,.2);color:var(--o300)}
+.container{max-width:960px;margin:0 auto;padding:32px 20px 80px}
+.section{margin-bottom:40px}
+.section-header{display:flex;align-items:center;gap:12px;margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid var(--o200)}
+.section-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;color:#fff;font-weight:700}
+.section-title{font-size:20px;font-weight:700;color:var(--g900)}
+.section-count{font-size:13px;color:var(--g500);background:var(--g100);padding:2px 10px;border-radius:12px;font-weight:600}
+.card-grid{display:grid;gap:12px}
+.card{background:#fff;border-radius:14px;padding:18px 20px;box-shadow:0 1px 4px rgba(0,0,0,.06);transition:.2s;border:1px solid rgba(0,0,0,.04)}
+.card:hover{box-shadow:0 4px 16px rgba(0,0,0,.1);transform:translateY(-1px);border-color:var(--o200)}
+.card-num{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:8px;background:linear-gradient(135deg,var(--o400),var(--o500));color:#fff;font-size:13px;font-weight:700;flex-shrink:0;margin-right:10px}
+.card-title{display:inline;font-size:15px;font-weight:600;color:var(--g900);line-height:1.5}
+.card-title a{color:inherit;text-decoration:none}
+.card-title a:hover{color:var(--o600)}
+.card-source{font-size:12px;color:var(--g500);margin:6px 0 0 36px}
+.card-summary{font-size:14px;color:var(--g600);margin:8px 0 0 36px;line-height:1.65}
+.card-link{display:inline-flex;align-items:center;gap:4px;font-size:12px;color:var(--o500);text-decoration:none;margin-top:6px;margin-left:36px}
+.card-link:hover{color:var(--o600)}
+.footer{text-align:center;padding:32px 20px;color:var(--g500);font-size:13px;border-top:1px solid var(--o100)}
+.footer a{color:var(--o500);text-decoration:none}
+@media(max-width:640px){.hero h1{font-size:28px}.stat-card{min-width:72px;padding:8px 12px}.stat-num{font-size:20px}.card{padding:14px 16px}.container{padding:20px 12px 60px}.section-title{font-size:17px}}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">🌅 AI 晨报 · 多 Agent 自动生成</div>
+    <h1>2026.06.22</h1>
+    <p class="subtitle">共 4 条 · 3 个版块</p>
+    <div class="hero-stats"><div class="stat-card"><span class="stat-num">1</span><span class="stat-label">产品发布/更新</span></div><div class="stat-card"><span class="stat-num">2</span><span class="stat-label">行业动态</span></div><div class="stat-card"><span class="stat-num">1</span><span class="stat-label">技巧与观点</span></div></div>
+  </div>
+</div>
+<nav class="nav-bar"><a href="#产品发布-更新" class="nav-item">🚀 产品发布/更新 (1)</a><a href="#行业动态" class="nav-item">📊 行业动态 (2)</a><a href="#技巧与观点" class="nav-item">💡 技巧与观点 (1)</a></nav>
+<div class="container"><section class="section" id="产品发布-更新"><div class="section-header"><div class="section-icon" style="background:linear-gradient(135deg,#3b82f6,#0ea5e9)"><span>🚀</span></div><span class="section-title">产品发布/更新</span><span class="section-count">1 条</span></div><div class="card-grid"><div class="card"><div class="card-title"><span class="card-num">1</span><a href="https://x.com/AYi_AInotes/status/2068637890247016607" target="_blank" rel="noopener">美团tabbit国际版免费接入GPT-5.5/Claude Opus 4.8等旗舰模型</a></div><div class="card-source"><span></span></div><div class="card-summary">美团近期上线tabbit国际版应用，免费集成多家顶级AI模型的最新旗舰版，包括GPT-5.5、Claude Opus 4.8、Gemini 3.5 Flash，以及国内Kimi-2.6、GLM-5.1、MiniMax-M3。用户无需单独订阅即可使用这些模型。需注意：只有国际版包含海外模型，国内版仅提供国内模型。该应用旨在抢占AI入口，目前处于免费推广阶段。</div><a class="card-link" href="https://x.com/AYi_AInotes/status/2068637890247016607" target="_blank">阅读原文 ↗</a></div></div></section><section class="section" id="行业动态"><div class="section-header"><div class="section-icon" style="background:linear-gradient(135deg,#10b981,#34d399)"><span>📊</span></div><span class="section-title">行业动态</span><span class="section-count">2 条</span></div><div class="card-grid"><div class="card"><div class="card-title"><span class="card-num">2</span><a href="https://x.com/AISafetyMemes/status/2068718552174252477" target="_blank" rel="noopener">NSA局长：Mythos数小时内攻破其几乎所有机密系统</a></div><div class="card-source"><span></span></div><div class="card-summary">美国NSA局长称，Mythos在数小时内攻破了其几乎所有机密系统。此前Mythos已在5天内破解MacOS。而顶级漏洞团队Google Project Zero完成同等攻击需6个月，单个MacOS零日漏洞价值约200万美元。苹果原假设全球仅10-20个团队具备此能力，Mythos将使该数字增至数千。全球约20亿活跃苹果设备中，Mac用户多为记者、高管、政府官员等高价值目标，苹果曾是“最安全”的选择。</div><a class="card-link" href="https://x.com/AISafetyMemes/status/2068718552174252477" target="_blank">阅读原文 ↗</a></div><div class="card"><div class="card-title"><span class="card-num">3</span><a href="https://openai.com/index/samsung-electronics-chatgpt-codex-deployment" target="_blank" rel="noopener">三星电子向全球员工部署ChatGPT Enterprise和Codex</a></div><div class="card-source"><span></span></div><div class="card-summary">三星电子向全球员工推出ChatGPT Enterprise和Codex，这是OpenAI目前规模最大的企业级AI部署之一。</div><a class="card-link" href="https://openai.com/index/samsung-electronics-chatgpt-codex-deployment" target="_blank">阅读原文 ↗</a></div></div></section><section class="section" id="技巧与观点"><div class="section-header"><div class="section-icon" style="background:linear-gradient(135deg,#ec4899,#f472b6)"><span>💡</span></div><span class="section-title">技巧与观点</span><span class="section-count">1 条</span></div><div class="card-grid"><div class="card"><div class="card-title"><span class="card-num">4</span><a href="https://mp.weixin.qq.com/s/xrTg2Bdy3FF3gn3C_gVBJQ" target="_blank" rel="noopener">腾讯元宝父亲节活动：上传照片生成与年轻爸爸的合影</a></div><div class="card-source"><span></span></div><div class="card-summary">腾讯元宝推出父亲节主题活动，用户可选择爸爸年轻时照片与自己的照片，输入提示词（如“帮我生成一张和爸爸的合影，将图2的我融合到图1爸爸的照片中，我想穿越回__年前，和他一起_____；保留爸爸照片的背景、动作及五官；人物姿态自然协调，整体光线与色调保持一致”），元宝即可生成合影。活动旨在让用户“回到过去”看到爸爸的青春模样。</div><a class="card-link" href="https://mp.weixin.qq.com/s/xrTg2Bdy3FF3gn3C_gVBJQ" target="_blank">阅读原文 ↗</a></div></div></section></div>
+<div class="footer">
+  <p>数据来源：<a href="https://aihot.virxact.com" target="_blank">AI HOT</a> · 多 Agent 流水线 · 2026.06.22</p>
+</div>
+<script>
+const o=new IntersectionObserver(e=>{e.forEach(e=>{if(e.isIntersecting){document.querySelectorAll('.nav-item').forEach(a=>a.classList.remove('active'));const t=e.target.id;document.querySelector(`.nav-item[href="#${t}"]`)?.classList.add('active')}})},{rootMargin:'-20% 0px -70% 0px'});
+document.querySelectorAll('.section').forEach(s=>o.observe(s));
+</script>
+</body>
+</html>
