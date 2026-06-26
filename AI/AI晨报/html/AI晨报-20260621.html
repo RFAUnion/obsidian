@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 晨报 · 2026.06.21</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--o50:#fff7ed;--o100:#ffedd5;--o200:#fed7aa;--o300:#fdba74;--o400:#fb923c;--o500:#f97316;--o600:#ea580c;--o700:#c2410c;--g50:#f9fafb;--g100:#f3f4f6;--g200:#e5e7eb;--g300:#d1d5db;--g500:#6b7280;--g600:#4b5563;--g700:#374151;--g800:#1f2937;--g900:#111827}
+body{font-family:'Noto Sans SC',-apple-system,BlinkMacSystemFont,sans-serif;background:linear-gradient(135deg,#fff7ed 0%,#ffedd5 50%,#fef3c7 100%);min-height:100vh;color:var(--g800);line-height:1.6}
+.hero{background:linear-gradient(135deg,#ea580c 0%,#f97316 40%,#fb923c 70%,#fdba74 100%);color:#fff;padding:56px 24px 40px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 30% 50%,rgba(255,255,255,.08) 0%,transparent 50%),radial-gradient(circle at 70% 80%,rgba(255,255,255,.05) 0%,transparent 40%);pointer-events:none}
+.hero-content{position:relative;z-index:1;max-width:960px;margin:0 auto}
+.hero-badge{display:inline-block;background:rgba(255,255,255,.2);backdrop-filter:blur(8px);padding:4px 16px;border-radius:20px;font-size:13px;margin-bottom:16px;letter-spacing:1px;border:1px solid rgba(255,255,255,.25)}
+.hero h1{font-size:42px;font-weight:900;letter-spacing:-1px;margin-bottom:4px;text-shadow:0 2px 8px rgba(0,0,0,.15)}
+.hero .subtitle{font-size:16px;opacity:.85;margin-bottom:24px}
+.hero-stats{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.stat-card{background:rgba(255,255,255,.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:10px 20px;text-align:center;min-width:90px}
+.stat-num{font-size:24px;font-weight:800;display:block}
+.stat-label{font-size:12px;opacity:.8;margin-top:2px}
+.nav-bar{background:var(--g900);padding:12px 24px;position:sticky;top:0;z-index:100;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
+.nav-bar::-webkit-scrollbar{display:none}
+.nav-item{flex-shrink:0;color:var(--g300);text-decoration:none;font-size:13px;padding:6px 14px;border-radius:8px;transition:.2s;white-space:nowrap;font-weight:500}
+.nav-item:hover,.nav-item.active{background:rgba(251,146,60,.2);color:var(--o300)}
+.container{max-width:960px;margin:0 auto;padding:32px 20px 80px}
+.section{margin-bottom:40px}
+.section-header{display:flex;align-items:center;gap:12px;margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid var(--o200)}
+.section-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;color:#fff;font-weight:700}
+.section-title{font-size:20px;font-weight:700;color:var(--g900)}
+.section-count{font-size:13px;color:var(--g500);background:var(--g100);padding:2px 10px;border-radius:12px;font-weight:600}
+.card-grid{display:grid;gap:12px}
+.card{background:#fff;border-radius:14px;padding:18px 20px;box-shadow:0 1px 4px rgba(0,0,0,.06);transition:.2s;border:1px solid rgba(0,0,0,.04)}
+.card:hover{box-shadow:0 4px 16px rgba(0,0,0,.1);transform:translateY(-1px);border-color:var(--o200)}
+.card-num{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:8px;background:linear-gradient(135deg,var(--o400),var(--o500));color:#fff;font-size:13px;font-weight:700;flex-shrink:0;margin-right:10px}
+.card-title{display:inline;font-size:15px;font-weight:600;color:var(--g900);line-height:1.5}
+.card-title a{color:inherit;text-decoration:none}
+.card-title a:hover{color:var(--o600)}
+.card-source{font-size:12px;color:var(--g500);margin:6px 0 0 36px}
+.card-summary{font-size:14px;color:var(--g600);margin:8px 0 0 36px;line-height:1.65}
+.card-link{display:inline-flex;align-items:center;gap:4px;font-size:12px;color:var(--o500);text-decoration:none;margin-top:6px;margin-left:36px}
+.card-link:hover{color:var(--o600)}
+.footer{text-align:center;padding:32px 20px;color:var(--g500);font-size:13px;border-top:1px solid var(--o100)}
+.footer a{color:var(--o500);text-decoration:none}
+@media(max-width:640px){.hero h1{font-size:28px}.stat-card{min-width:72px;padding:8px 12px}.stat-num{font-size:20px}.card{padding:14px 16px}.container{padding:20px 12px 60px}.section-title{font-size:17px}}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">🌅 AI 晨报 · 多 Agent 自动生成</div>
+    <h1>2026.06.21</h1>
+    <p class="subtitle">共 2 条 · 2 个版块</p>
+    <div class="hero-stats"><div class="stat-card"><span class="stat-num">1</span><span class="stat-label">行业动态</span></div><div class="stat-card"><span class="stat-num">1</span><span class="stat-label">技巧与观点</span></div></div>
+  </div>
+</div>
+<nav class="nav-bar"><a href="#行业动态" class="nav-item">📊 行业动态 (1)</a><a href="#技巧与观点" class="nav-item">💡 技巧与观点 (1)</a></nav>
+<div class="container"><section class="section" id="行业动态"><div class="section-header"><div class="section-icon" style="background:linear-gradient(135deg,#10b981,#34d399)"><span>📊</span></div><span class="section-title">行业动态</span><span class="section-count">1 条</span></div><div class="card-grid"><div class="card"><div class="card-title"><span class="card-num">1</span><a href="https://x.com/AYi_AInotes/status/2068218661710512231" target="_blank" rel="noopener">微软双向转售GPT与DeepSeek成全球最大AI中间商</a></div><div class="card-source"><span></span></div><div class="card-summary">彭博社报道，微软已成为全球最大AI模型中转站，既将ChatGPT卖给中国企业，也反向将DeepSeek模型卖给西方客户。报道称微软正在测试DeepSeek-R1和DeepSeek-V4，计划向西方客户提供这些中国模型。这一模式构建起跨中美AI模型的双向贸易网络。</div><a class="card-link" href="https://x.com/AYi_AInotes/status/2068218661710512231" target="_blank">阅读原文 ↗</a></div></div></section><section class="section" id="技巧与观点"><div class="section-header"><div class="section-icon" style="background:linear-gradient(135deg,#ec4899,#f472b6)"><span>💡</span></div><span class="section-title">技巧与观点</span><span class="section-count">1 条</span></div><div class="card-grid"><div class="card"><div class="card-title"><span class="card-num">2</span><a href="https://x.com/shao__meng/status/2068306942184034471" target="_blank" rel="noopener">开源教程《Deep Agents 实战》发布</a></div><div class="card-source"><span></span></div><div class="card-summary">LangChain 官方认证大使 @zhanghaili0610 推出开源教程《Deep Agents 实战》，基于 LangChain / LangGraph 生态，讲解如何用 Deep Agents Harness 框架构建真实 Agent 应用。核心是“三层架构”：Runtime（LangGraph）、Framework（LangChain）、Harness（Deep Agents）。技术内核为上下文工程，通过虚拟文件系统实现按需读取、中间结果落盘、大文件局部读取。教程共 8 章 + 2 准备篇，覆盖虚拟文件系统（六大工具）、任务规划、子 Agent 委派（异步并行）及 Skills 复用（可在 Claude Code、Cur…</div><a class="card-link" href="https://x.com/shao__meng/status/2068306942184034471" target="_blank">阅读原文 ↗</a></div></div></section></div>
+<div class="footer">
+  <p>数据来源：<a href="https://aihot.virxact.com" target="_blank">AI HOT</a> · 多 Agent 流水线 · 2026.06.21</p>
+</div>
+<script>
+const o=new IntersectionObserver(e=>{e.forEach(e=>{if(e.isIntersecting){document.querySelectorAll('.nav-item').forEach(a=>a.classList.remove('active'));const t=e.target.id;document.querySelector(`.nav-item[href="#${t}"]`)?.classList.add('active')}})},{rootMargin:'-20% 0px -70% 0px'});
+document.querySelectorAll('.section').forEach(s=>o.observe(s));
+</script>
+</body>
+</html>
